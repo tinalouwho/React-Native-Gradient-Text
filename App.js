@@ -16,9 +16,10 @@ export default function App() {
   return (
     <SafeAreaProvider>
     <View style={[styles.container, themeContainerStyle]}>
-      <Text style={{fontWeight: 500, fontSize: 40, paddingLeft: 20}}>Build faster</Text>
-      <GradientText text="Design better." style={{fontSize: 40, fontWeight: 900, paddingLeft: 20 }} />
-      <Button />
+      <GradientText text="Code Swap" style={{fontSize: 60, fontWeight: 900 }} />
+      <Text style={{fontWeight: 500, fontSize: 17, fontWeight: 900}}>Build Faster. Look Better. Code Smarter.</Text>
+      <Text style={{paddingHorizontal: 20, paddingVertical: 20, textAlign: 'center', fontSize: 20}}>The social app that connects front and back-end developers so you can barter, collaborate, or charge for services.</Text>
+      <Button label='button' style={{backgroundColor: '#171717'}} />
       <StatusBar style="auto" />
     </View>
     </SafeAreaProvider>
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
 
   },
   lightContainer: {
