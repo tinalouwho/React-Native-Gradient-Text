@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Appearance, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
+import GradientText from './app/screens/GradientText';
+import Button from './components/Button'
 
 
 export default function App() {
@@ -15,7 +16,9 @@ export default function App() {
   return (
     <SafeAreaProvider>
     <View style={[styles.container, themeContainerStyle]}>
-      <Text style={[styles.title, themeTextStyle]}>Open up App.js to start working on your app!</Text>
+      <Text style={{fontWeight: 500, fontSize: 40, paddingLeft: 20}}>Build faster</Text>
+      <GradientText text="Design better." style={{fontSize: 40, fontWeight: 900, paddingLeft: 20 }} />
+      <Button />
       <StatusBar style="auto" />
     </View>
     </SafeAreaProvider>
@@ -25,8 +28,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+
   },
   lightContainer: {
     backgroundColor: '#f3f3f3',
