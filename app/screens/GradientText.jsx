@@ -10,7 +10,7 @@ export default function GradientText(props) {
             <LinearGradient
                 start={{x: 0, y:0}}
                 end={{x: 1, y:1}}
-                colors={['#FA00FF', 'blue']}
+                colors={['#7E7EFF', 'blue']}
             >
                 <Text style={[props.style, {opacity: 0}]}>{props.text}</Text>
             </LinearGradient>
