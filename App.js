@@ -22,8 +22,18 @@ export default function App() {
   style={{width: 120, height: 85}}
 />
       <GradientText text="Code Swap" style={{fontSize: 40, fontWeight: 900 }} />
-      <Text style={{fontWeight: 500, fontSize: 15, fontWeight: 900}}>Build Faster. Look Better. Code Smarter.</Text>
-      <Text style={{paddingHorizontal: 20, paddingVertical: 20, textAlign: 'center', fontSize: 15}}>The social app that connects front and back-end developers so you can barter, collaborate, or charge for services.</Text>
+      <Text style={[{ fontWeight: 500, fontSize: 15, fontWeight: 900 }, themeTextStyle]}>
+          Build Faster. Look Better. Code Smarter.
+        </Text>
+        <Text
+          style={[
+            { paddingHorizontal: 20, paddingVertical: 20, textAlign: 'center', fontSize: 15 },
+            themeTextStyle,
+          ]}
+        >
+          The social app that connects front and back-end developers so you can barter, collaborate,
+          or charge for services.
+        </Text>
       <Button label='button' style={{backgroundColor: '#171717'}} />
       <StatusBar style="auto" />
     </View>
@@ -41,12 +51,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#d0d0c0',
   },
   darkContainer: {
-    backgroundColor: '#242c40',
+    backgroundColor: '#171717',
   },
   lightThemeText: {
-    color: '#242c40',
+    color: '#171717',
   },
   darkThemeText: {
-    color: 'white',
+    color: '#d0d0c0',
   },
 });
